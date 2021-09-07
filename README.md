@@ -48,14 +48,16 @@ export default {
   :stepOption="state.stepOption"
   @handleCheck="handleCheck"
   @handleDetails="handleDetails"
+  ref="sonRef"
   >
 
   </Vue3Step>
 </template>
 
 <script>
-import { reactive,defineComponent } from 'vue'
+import { reactive, defineComponent } from 'vue'
 export default defineComponent ({
+  name: "App",
   setup(){
     const state = reactive({
       step: '1-1',
@@ -65,7 +67,8 @@ export default defineComponent ({
       ]
     })
     const handleCheck = () => {
-      alert('点击check')
+      state.step = '1-2'
+      state.stepOption[0][0].status = 1
     }
     const handleDetails = (item) => {
       console.log(item)

@@ -1,18 +1,17 @@
 <template>
   <div class="vue3_step">
     <Vue3Step
-    :step="state.step"
-    :stepOption="state.stepOption"
-    @handleCheck="handleCheck"
-    @handleDetails="handleDetails"
-    >
-
+      :step="state.step"
+      :stepOption="state.stepOption"
+      @handleCheck="handleCheck"
+      @handleDetails="handleDetails"
+      >
     </Vue3Step>
   </div>
 </template>
 
 <script>
-import { reactive,defineComponent } from 'vue'
+import { reactive, defineComponent } from 'vue'
 export default defineComponent ({
   name: "App",
   setup(){
@@ -24,7 +23,8 @@ export default defineComponent ({
       ]
     })
     const handleCheck = () => {
-      alert('点击check')
+      state.step = '1-2'
+      state.stepOption[0][0].status = 1
     }
     const handleDetails = (item) => {
       console.log(item)
