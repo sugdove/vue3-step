@@ -88,7 +88,7 @@ export default defineComponent ({
 
 - step
 
-    - 参数String `${n}=${m}` 
+    - 参数String `${n}-${m}` 
     
     当前在第n大步里的第m小步
 
