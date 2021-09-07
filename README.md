@@ -8,7 +8,9 @@
 <!-- [demo](https://githubs.club/demo/) -->
 
 ## 项目地址
+
 - github : https://github.com/sugdove/vue3-step
+
 - github项目启动: 1.yarn install 2.yarn serve
 
 ## 依赖
@@ -118,4 +120,5 @@ export default defineComponent ({
 邮箱 : 849809724@qq.com
 
 欢迎大家关注我做的网站: https://githubs.club/
+
 有任何问题请发Issues或者邮箱联系我-.-  谢谢!
