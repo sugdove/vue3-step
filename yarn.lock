@@ -8405,11 +8405,6 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vue-cli-plugin-element-plus@^0.0.13:
-  version "0.0.13"
-  resolved "https://registry.npm.taobao.org/vue-cli-plugin-element-plus/download/vue-cli-plugin-element-plus-0.0.13.tgz#da829776373aad4269fc23b57bb3aa043bc67744"
-  integrity sha1-2oKXdjc6rUJp/CO1e7OqBDvGd0Q=
-
 vue-eslint-parser@^7.10.0:
   version "7.10.0"
   resolved "https://registry.nlark.com/vue-eslint-parser/download/vue-eslint-parser-7.10.0.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.10.0.tgz#ea4e4b10fd10aa35c8a79ac783488d8abcd29be8"

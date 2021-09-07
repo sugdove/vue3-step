@@ -5,7 +5,7 @@
 
 
 这是一个二维步骤条, 每个大步骤下面有复数个小步骤
-<!-- [demo](https://githubs.club/demo/) -->
+[demo](https://githubs.club/vue3-step/)
 
 ## 项目地址
 
