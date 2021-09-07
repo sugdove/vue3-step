@@ -50,7 +50,6 @@ export default {
   :stepOption="state.stepOption"
   @handleCheck="handleCheck"
   @handleDetails="handleDetails"
-  ref="sonRef"
   >
 
   </Vue3Step>
