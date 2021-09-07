@@ -26,14 +26,14 @@ import { createApp } from 'vue'
 import App from './App.vue'
 //全局引入
 import Vue3Step from 'vue3-step' 
-import 'vue3-step/lib/Vue3Step.css' // 引入样式
+import 'vue3-step/lib/vue3Step.css' // 引入样式
 const app = createApp(App)
 app.use(Vue3Step).mount('#app') //使用方式：<Vue3Step></Vue3Step>
 
 
 //局部引入
 import { MyStep } from 'vue3-step'
-import 'vue3-step/lib/Vue3Step.css' // 引入样式
+import 'vue3-step/lib/vue3Step.css' // 引入样式
 export default {
     template: '<MyStep/>',
     components: { MyStep }
