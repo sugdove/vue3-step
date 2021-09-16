@@ -5,6 +5,7 @@
       :stepOption="state.stepOption"
       @handleCheck="handleCheck"
       @handleDetails="handleDetails"
+      @handleStep="handleStep"
       >
     </Vue3Step>
   </div>
@@ -29,11 +30,15 @@ export default defineComponent ({
     const handleDetails = (item) => {
       console.log(item)
     }
-    
+    const handleStep = (index) => {
+      state.step = `${index+1}-1`
+      console.log(index)
+    }
     return {
       state,
       handleCheck,
-      handleDetails
+      handleDetails,
+      handleStep
     }
   }
 });

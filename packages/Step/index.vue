@@ -9,7 +9,11 @@
   <div class="step_content">
     <!-- 遍历stepOption步骤配置数据 -->
     <template v-for="(item, index) in stepOption" :key="index">
-      <div class="step_box" :class="getActiveClass('step_now', item, index)">
+      <div
+        class="step_box"
+        :class="getActiveClass('step_now', item, index)"
+        @click="handleStep(index)"
+      >
         <div class="header">
           <div
             class="step_num"
@@ -132,9 +136,9 @@ export default defineComponent({
         }
       }
       emit("update:step", stepArr.join("-"));
-    }
+    };
     const handleCheck = () => {
-      emit('handleCheck')
+      emit("handleCheck");
     };
     /**
      * @description: 确定某一步骤的整体状态
@@ -204,13 +208,17 @@ export default defineComponent({
     const handleDetails = (item, index, index2) => {
       emit("handleDetails", item, index, index2);
     };
+    const handleStep = (index) => {
+      emit("handleStep", index);
+    };
     // 挂载默认钩子函数
     return {
       state,
       handleCheck,
       getActiveClass,
       handleDetails,
-      goNext
+      goNext,
+      handleStep,
     };
   },
 });

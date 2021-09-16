@@ -50,6 +50,7 @@ export default {
   :stepOption="state.stepOption"
   @handleCheck="handleCheck"
   @handleDetails="handleDetails"
+  @handleStep="handleStep"
   >
 
   </Vue3Step>
@@ -62,6 +63,7 @@ export default defineComponent ({
   setup(){
     const state = reactive({
       step: '1-1',
+      // status：0 未检查, 1 通过, 2 待完善 3. 未通过
       stepOption: [
         [{label: '连通性检查', status: 0 }, {label: '必填字段检查', status: 0 }],
         [{label: '必填内容检查', status: 0}, {label: '数据格式检查', status: 0} , {label: '匹配率检查', status: 0}]
@@ -74,11 +76,16 @@ export default defineComponent ({
     const handleDetails = (item) => {
       console.log(item)
     }
-    
+    const handleStep = (index) => {
+      state.step = `${index+1}-1`
+      console.log(index)
+    }
+    const hanlde
     return {
       state,
       handleCheck,
-      handleDetails
+      handleDetails,
+      handleStep
     }
   }
 });
@@ -113,6 +120,12 @@ export default defineComponent ({
     - 参数Object：
     
     点击某一详情的钩子函数 item为改step对象, index为stepOptions下标, index2为stepOptions二维下标
+
+- handleStep( index )
+
+    - 参数index：
+    
+    点击某一大步骤的钩子函数 index 为二维数组第一层下标
     
 ## 联系方式
 
