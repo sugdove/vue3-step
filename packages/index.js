@@ -1,7 +1,7 @@
 
-import Step from './Step';
+import Step_ from './Step';
 const components = [
-  Step
+  Step_
   // ...如果还有的话继续添加
 ]
 const install = function (Vue) {
@@ -14,7 +14,7 @@ if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue);
 }
 
-export const MyStep = Step
+export const Vue3Step = Step_
 
 export default {
   install

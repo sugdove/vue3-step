@@ -21,7 +21,7 @@
 npm install vue3-step
 ```
 
-## 引入方式
+## 全局引入方式
 ```javascript
 //前置配置
 import { createApp } from 'vue'
@@ -31,14 +31,15 @@ import Vue3Step from 'vue3-step'
 import 'vue3-step/lib/vue3Step.css' // 引入样式
 const app = createApp(App)
 app.use(Vue3Step).mount('#app') //使用方式：<Vue3Step></Vue3Step>
-
-
+```
+## 局部引入方式
+```javascript
 //局部引入
-import { MyStep } from 'vue3-step'
+import { Vue3Step } from 'vue3-step'
 import 'vue3-step/lib/vue3Step.css' // 引入样式
 export default {
-    template: '<MyStep/>',
-    components: { MyStep }
+    template: '<Vue3Step/>',
+    components: { Vue3Step }
 }
 ```
 
