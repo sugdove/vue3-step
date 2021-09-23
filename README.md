@@ -80,7 +80,6 @@ export default defineComponent ({
       state.step = `${index+1}-1`
       console.log(index)
     }
-    const hanlde
     return {
       state,
       handleCheck,
