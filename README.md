@@ -133,4 +133,6 @@ export default defineComponent ({
 
 欢迎大家关注我做的网站: https://githubs.club/
 
+如果对您有帮助, 欢迎star
+
 有任何问题请发Issues或者邮箱联系我-.-  谢谢!
