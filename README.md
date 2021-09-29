@@ -9,7 +9,7 @@
 
 ## 项目地址
 
-- github : https://github.com/sugdove/vue3-step
+<!-- - github : https://github.com/sugdove/vue3-step -->
 
 - github项目启动: 1.yarn install 2.yarn serve
 
