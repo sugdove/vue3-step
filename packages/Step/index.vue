@@ -60,7 +60,7 @@
     <!-- <div class="step_box is_active box2"></div> -->
     <div class="check_box" @click="handleCheck">
       <div class="content">
-        <i class="iconfont icon-jiancha"></i>
+        <i class="iconfont icon-jiancha startSearch"></i>
         <span>启动检查</span>
       </div>
     </div>
@@ -250,7 +250,6 @@ export default defineComponent({
     .header {
       display: flex;
       justify-content: space-between;
-
       font-size: 12px;
       padding: 10px;
       .step_num {
@@ -312,7 +311,8 @@ export default defineComponent({
       display: flex;
       flex-direction: column;
       i {
-        width: 18px;
+        width:18px;
+        font-size: 16px;
         height: 18px;
         align-self: center;
       }
