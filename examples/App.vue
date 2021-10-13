@@ -19,8 +19,8 @@ export default defineComponent ({
     const state = reactive({
       step: '1-1',
       stepOption: [
-        [{label: '连通性检查', status: 0 }, {label: '必填字段检查', status: 0 }],
-        [{label: '必填内容检查', status: 0}, {label: '数据格式检查', status: 0} , {label: '匹配率检查', status: 0}]
+        [{label: 'step1-1', status: 0 }, {label: 'step1-2', status: 0 }],
+        [{label: 'step2-1', status: 0}, {label: 'step2-2', status: 0} , {label: 'step2-3', status: 0}]
       ]
     })
     const handleCheck = () => {

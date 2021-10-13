@@ -9,7 +9,7 @@
 
 ## 项目地址
 
-- github : https://github.com/sugdove/vue3-step
+<!-- - github : https://github.com/sugdove/vue3-step -->
 
 - github项目启动: 1.yarn install 2.yarn serve
 
@@ -66,8 +66,8 @@ export default defineComponent ({
       step: '1-1',
       // status：0 未检查, 1 通过, 2 待完善 3. 未通过
       stepOption: [
-        [{label: '连通性检查', status: 0 }, {label: '必填字段检查', status: 0 }],
-        [{label: '必填内容检查', status: 0}, {label: '数据格式检查', status: 0} , {label: '匹配率检查', status: 0}]
+        [{label: 'step1-1', status: 0 }, {label: 'step1-2', status: 0 }],
+        [{label: 'step2-1', status: 0}, {label: 'step2-2', status: 0} , {label: 'step2-3', status: 0}]
       ]
     })
     const handleCheck = () => {
@@ -128,8 +128,6 @@ export default defineComponent ({
     点击某一大步骤的钩子函数 index 为二维数组第一层下标
     
 ## 联系方式
-
-邮箱 : 849809724@qq.com
 
 欢迎大家关注我做的网站: https://githubs.club/
 
