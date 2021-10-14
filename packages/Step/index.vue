@@ -58,7 +58,7 @@
     </template>
 
     <!-- <div class="step_box is_active box2"></div> -->
-    <div class="check_box" @click="handleCheck">
+    <div class="check_box" @click="handleCheck" v-if="submitIf">
       <div class="content">
         <i class="iconfont icon-jiancha startSearch"></i>
         <span>启动检查</span>
@@ -90,6 +90,10 @@ export default defineComponent({
           { label: "匹配率检查", status: 0 },
         ],
       ],
+    },
+    submitIf: {
+      type: Boolean,
+      default: true
     },
     // stepOption 二维数组,
     // 0 待检查, 1 检查通过, 2 建议完善, 3 未通过
