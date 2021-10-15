@@ -20,6 +20,9 @@
             :class="getActiveClass('step_num', item, index)"
           >
             {{ `Step${index + 1}` }}
+            <span v-if="readCount && index === 1">
+              检查数据数量（主表）：{{ readCount }}行
+            </span>
           </div>
           <div
             class="step_status"
@@ -95,6 +98,10 @@ export default defineComponent({
       type: Boolean,
       default: true
     },
+    readCount: {
+      type: Number,
+      default: 0
+    }
     // stepOption 二维数组,
     // 0 待检查, 1 检查通过, 2 建议完善, 3 未通过
     /**

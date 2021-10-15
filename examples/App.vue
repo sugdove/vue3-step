@@ -6,6 +6,7 @@
       @handleCheck="handleCheck"
       @handleDetails="handleDetails"
       @handleStep="handleStep"
+      :readCount="0"
       >
     </Vue3Step>
   </div>
