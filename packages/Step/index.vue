@@ -248,7 +248,7 @@ export default defineComponent({
     min-width: 264px;
     // padding: 20px;
     color: rgba(0, 0, 0, 0.45);
-    font-family: PingFangSC-Medium;
+    // font-family: PingFangSC-Medium;
     display: flex;
     flex-direction: column;
     cursor: pointer;
