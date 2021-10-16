@@ -21,7 +21,7 @@
           >
             {{ `Step${index + 1}` }}
             <span v-if="readCount && index === 1">
-              检查数据数量（主表）：{{ readCount }}行
+              检查数据数量（主表）:{{ readCount }}行
             </span>
           </div>
           <div
