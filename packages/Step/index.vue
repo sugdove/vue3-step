@@ -325,6 +325,7 @@ export default defineComponent({
         // width:18px;
         font-size: 16px;
         height: 18px;
+        margin-bottom: 4px;
         align-self: center;
       }
       span {
