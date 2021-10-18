@@ -322,7 +322,7 @@ export default defineComponent({
       display: flex;
       flex-direction: column;
       i {
-        width:18px;
+        // width:18px;
         font-size: 16px;
         height: 18px;
         align-self: center;
