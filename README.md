@@ -4,7 +4,7 @@
 ![CocoaPods](https://img.shields.io/npm/v/vue3-step.svg)
 
 这是一个二维步骤条, 每个大步骤下面有复数个小步骤
-[demo](https://githubs.club/vue3-step/)
+[demo](http://www.githubs.cloud/vue3-step/)
 
 ## 项目地址
 
@@ -139,7 +139,7 @@ export default defineComponent({
 
 ## 联系方式
 
-欢迎大家关注我做的网站: https://githubs.club/
+欢迎大家关注我做的网站: http://www.githubs.cloud/
 
 如果对您有帮助, 欢迎 star
 
